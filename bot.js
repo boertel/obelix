@@ -32,7 +32,9 @@ function commasAnd(a) {
 
 
 // create a bot
-var toChannel = process.env.SLACK_TO_CHANNEL || 'general';
+var toChannel = process.env.SLACK_TO_CHANNEL || 'general',
+    mute = process.env.BOT_MUTE || false;
+
 var rtm = new RtmClient(process.env.SLACK_TOKEN, { logLevel: '' });
 rtm.start();
 
@@ -55,7 +57,9 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
     if (foodsOfDay  !== undefined) {
         var message = createMessage(foodsOfDay);
         var to = _.find(store.channels, { name: toChannel });
-        rtm.sendMessage(message, to.id)
+        if (!mute) {
+            //rtm.sendMessage(message, to.id)
+        }
     }
 });
 
