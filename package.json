@@ -4,6 +4,7 @@
   "description": "hungry village idiot",
   "main": "bot.js",
   "scripts": {
+    "start": "node bot.js"
   },
   "author": "Ben Oertel",
   "license": "ISC",
