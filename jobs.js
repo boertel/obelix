@@ -32,8 +32,8 @@ function commasAnd(a) {
 
 
 // create a bot
-var toChannel = process.env.SLACK_TO_CHANNEL || 'general',
-    mute = process.env.BOT_MUTE || false;
+var toChannel = process.env.SLACK_TO_CHANNEL || 'random',
+    mute = process.env.BOT_MUTE === 'true' || false;
 
 var rtm = new RtmClient(process.env.SLACK_TOKEN, { logLevel: '' });
 rtm.start();
@@ -58,13 +58,9 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
         var message = createMessage(foodsOfDay);
         var to = _.find(store.channels, { name: toChannel });
         if (!mute) {
-            //rtm.sendMessage(message, to.id)
+            rtm.sendMessage(message, to.id, function() {
+                rtm.disconnect();
+            })
         }
     }
 });
-
-// To keep Heroku's free dyno awake
-http.createServer(function(request, response) {
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('Ok, dyno is awake.');
-}).listen(process.env.PORT || 5000);
