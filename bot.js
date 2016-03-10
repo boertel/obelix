@@ -2,6 +2,7 @@ var RtmClient = require('@slack/client').RtmClient,
     RTM_EVENTS = require('@slack/client').RTM_EVENTS,
     RTM_CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS.RTM,
     _ = require('lodash'),
+    http = require('http'),
     foods = require('./foods');
 
 
@@ -57,3 +58,9 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
         rtm.sendMessage(message, to.id)
     }
 });
+
+// To keep Heroku's free dyno awake
+http.createServer(function(request, response) {
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+    response.end('Ok, dyno is awake.');
+}).listen(process.env.PORT || 5000);
