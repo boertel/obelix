@@ -1,0 +1,14 @@
+{
+  "name": "obelix",
+  "version": "1.0.0",
+  "description": "hungry village idiot",
+  "main": "bot.js",
+  "scripts": {
+  },
+  "author": "Ben Oertel",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^2.1.0",
+    "lodash": "^4.6.1"
+  }
+}
