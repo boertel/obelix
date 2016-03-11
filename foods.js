@@ -89,8 +89,7 @@ module.exports = {
 		"Blueberry Popover"
 	],
 	"03-11": [
-		"Oatmeal Nut Waffles",
-		"Johnny Appleseed"
+		"Oatmeal Nut Waffles"
 	],
 	"03-12": [
 		"Baked Scallops"
