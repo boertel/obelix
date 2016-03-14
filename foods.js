@@ -97,6 +97,9 @@ module.exports = {
 	"03-13": [
 		"Coconut Torte"
 	],
+    "03-14": [
+        "Potato Chip"
+    ],
 	"03-22": [
 		"Corndog"
 	],
