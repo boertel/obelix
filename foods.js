@@ -1,39 +1,49 @@
 module.exports = {
 	"01-02": [
-		"Creampuff"
+		"Cream Puff"
 	],
 	"01-03": [
-		"Chocolate Covered Cherry"
+		"Chocolate-Covered Cherry"
 	],
 	"01-04": [
-		"Cheese Fondue"
+		"Cheese Fondue",
+		"Spaghetti"
 	],
 	"01-05": [
 		"Whipped Cream"
 	],
 	"01-09": [
-		"Cassoulet"
+		"Cassoulet",
+		"Apricot"
 	],
 	"01-19": [
 		"Popcorn"
 	],
 	"01-20": [
-		"Cheese"
+		"Cheese",
+		"Buttercrunch",
+		"Cheese Lover's",
+		"Granola Bar"
 	],
 	"01-22": [
-		"Hot Sauce"
+		"Hot Sauce",
+		"Blonde Brownie"
 	],
 	"01-23": [
-		"Pie"
+		"Pie",
+		"Rhubarb Pie"
 	],
 	"01-24": [
-		"Peanut Butter"
+		"Peanut Butter",
+		"Lobster Thermidor"
 	],
 	"01-27": [
 		"Chocolate Cake"
 	],
 	"02-02": [
-		"Tater Tot"
+		"Tater Tot",
+		"Heavenly Hash",
+		"Crepes (France)"
 	],
 	"00-NaN": [
 		"Ice Cream for Breakfast",
@@ -46,31 +56,96 @@ module.exports = {
 		"Men Make Dinner",
 		"International Stout",
 		"Turkey  (informal name for Thanksgiving Day)",
-		"Sinkie"
+		"Sinkie",
+		"Pizza Week",
+		"Meat Week",
+		"Irish Coffee Week",
+		"Shape Up With Pickles Time",
+		"Great American Pizza Bake",
+		"Jell-O Week",
+		"Kraut and Frankfurter Week",
+		"Pancake Week",
+		"Food Checkout Week",
+		"International Pancake",
+		"Oatmeal Monday",
+		"Chocolate Chip Cookie Week",
+		"School Breakfast Week",
+		"American Chocolate Week",
+		"Maple Syrup Saturday",
+		"Hot Cross Bun",
+		"Baked Ham with Pineapple",
+		"Bake Week",
+		"Egg Salad Week",
+		"Raisin Week",
+		"Hamburger Week",
+		"International Pickles Week",
+		"Frozen Yogurt Week",
+		"American Beer Week",
+		"Barbecue",
+		"Hamburger/ Cheeseburger",
+		"Donut s (Salvation Army)",
+		"Canned Luncheon Meat Week",
+		"Sundae Sunday",
+		"Hot Dog",
+		"Apple Week",
+		"Waffle Week",
+		"Biscuit and Gravy Week",
+		"Vegetarian Awareness Week",
+		"Wild Rice Week",
+		"Wine Season Begins",
+		"Oyster Season Begins",
+		"No Salt Week",
+		"Chili Week",
+		"Food Bank Week",
+		"School Lunch Week",
+		"Pasta Week",
+		"Kraut Sandwich Week",
+		"Pickled Peppers Week",
+		"Chicken Soup for the Soul Week",
+		"Desert",
+		"Sweetest",
+		"Fig Week",
+		"Split Pea Soup Week",
+		"Turkey",
+		"Stuffing",
+		"Leftovers",
+		"Fruit Cake Month",
+		"Egg Nog Month",
+		"Cookie Cutter Week",
+		"Lager Beer Week",
+		"Egg Nog Week"
 	],
 	"02-09": [
-		"Pizza"
+		"Pizza",
+		"Bagels and Lox"
 	],
 	"02-15": [
-		"I Want Butterscotch"
+		"I Want Butterscotch",
+		"Gumdrop"
 	],
 	"02-22": [
-		"Margarita"
+		"Margarita",
+		"Cherry Pie"
 	],
 	"02-23": [
-		"Banana Bread"
+		"Banana Bread",
+		"Dog Biscuit Appreciation"
 	],
 	"02-29": [
-		"Frog Legs  (Celebration for Leap Day)"
+		"Frog Legs (Celebration for Leap Day)",
+		"Surf and Turf"
 	],
 	"03-01": [
-		"Peanut Butter Lover's"
+		"Peanut Butter Lover's",
+		"Fruit Compote"
 	],
 	"03-02": [
 		"Banana Creme Pie"
 	],
 	"03-03": [
-		"Canadian Bacon"
+		"Canadian Bacon",
+		"Cold Cuts",
+		"Mulled Wine"
 	],
 	"03-05": [
 		"Cheese Doodle"
@@ -89,7 +164,7 @@ module.exports = {
 		"Blueberry Popover"
 	],
 	"03-11": [
-		"Oatmeal Nut Waffles"
+		"Oatmeal-Nut Waffles"
 	],
 	"03-12": [
 		"Baked Scallops"
@@ -97,48 +172,58 @@ module.exports = {
 	"03-13": [
 		"Coconut Torte"
 	],
-    "03-14": [
-        "Potato Chip"
-    ],
+	"03-14": [
+		"Potato Chip"
+	],
 	"03-22": [
-		"Corndog"
+		"Corndog",
+		"Coq Au Vin"
 	],
 	"03-23": [
-		"Chips and Dip"
+		"Chips and Dip",
+		"Melba Toast"
 	],
 	"03-27": [
-		"International Whiskey"
+		"International Whiskey",
+		"Spanish Paella"
 	],
 	"03-31": [
-		"Clams on the Half Shell"
+		"Clams on the Half Shell",
+		"Tater",
+		"Oranges and Lemons"
 	],
 	"04-02": [
 		"Peanut Butter and Jelly"
 	],
 	"04-05": [
-		"Caramel"
+		"Caramel",
+		"Raisin and Spice Bar"
 	],
 	"04-07": [
-		"Beer"
+		"Beer",
+		"Coffee Cake"
 	],
 	"04-11": [
 		"Cheese Fondue"
 	],
 	"04-12": [
-		"Grilled Cheese Sandwich"
+		"Grilled Cheese Sandwich",
+		"Licorice"
 	],
 	"04-15": [
-		"Banana"
+		"Banana",
+		"Glazed-Spiral Ham"
 	],
 	"04-17": [
 		"Cheeseball"
 	],
 	"04-19": [
 		"Garlic",
-		"Rice Ball"
+		"Rice Ball",
+		"Amaretto"
 	],
 	"04-24": [
-		"Pigs in a Blanket"
+		"Pigs-in-a-Blanket"
 	],
 	"04-25": [
 		"Zucchini Bread"
@@ -153,16 +238,22 @@ module.exports = {
 		"Shrimp Scampi"
 	],
 	"05-04": [
-		"Candied Orange Peel"
+		"Candied Orange Peel",
+		"Homebrew",
+		"Orange Juice"
 	],
 	"05-05": [
-		"Hoagie"
+		"Hoagie",
+		"Chocolate Custard",
+		"Cinco de Mayo Recipes",
+		"Oyster"
 	],
 	"05-11": [
 		"Eat What You Want"
 	],
 	"05-17": [
-		"Walnut"
+		"Walnut",
+		"Cherry Cobbler"
 	],
 	"05-23": [
 		"Taffy"
@@ -176,7 +267,7 @@ module.exports = {
 	],
 	"06-02": [
 		"Rotisserie Chicken",
-		"Rocky Road"
+		"Rocky Road Ice Cream"
 	],
 	"06-03": [
 		"Chocolate Macaroon",
@@ -184,7 +275,9 @@ module.exports = {
 	],
 	"06-04": [
 		"Cheese",
-		"Cognac"
+		"Cognac",
+		"Applesauce Cake",
+		"Frozen Yogurt"
 	],
 	"06-05": [
 		"Donut/Doughnut",
@@ -198,10 +291,13 @@ module.exports = {
 		"Chocolate Ice Cream"
 	],
 	"06-10": [
-		"Iced Tea"
+		"Iced Tea",
+		"Herbs & Spice",
+		"Black Cow"
 	],
 	"06-11": [
-		"Corn on the cob day"
+		"Corn on the cob day",
+		"German Chocolate Cake"
 	],
 	"06-12": [
 		"Peanut Butter Cookie"
@@ -213,7 +309,8 @@ module.exports = {
 		"Fudge"
 	],
 	"06-17": [
-		"Eat Your Vegetables"
+		"Fresh Veggies",
+		"Apple Streudel"
 	],
 	"06-20": [
 		"Vanilla Milkshake",
@@ -221,16 +318,18 @@ module.exports = {
 		"Kouign Amann"
 	],
 	"06-21": [
-		"Peaches ‘N’ Cream"
+		"Peaches and Cream"
 	],
 	"06-25": [
-		"Catfish"
+		"Catfish",
+		"Strawberry Parfait"
 	],
 	"06-26": [
 		"Chocolate Pudding"
 	],
 	"06-27": [
-		"Orange Blossom"
+		"Orange Blossom",
+		"Indian Pudding"
 	],
 	"06-28": [
 		"Ceviche",
@@ -264,13 +363,14 @@ module.exports = {
 		"Strawberry Sundae"
 	],
 	"07-08": [
-		"Chocolate with Almonds"
+		"Chocolate with Almonds",
+		"Don't Put All Your Eggs in One Omelette"
 	],
 	"07-09": [
 		"Sugar Cookie"
 	],
 	"07-10": [
-		"Piña colada"
+		"Piña Colada"
 	],
 	"07-11": [
 		"Blueberry Muffin"
@@ -280,11 +380,14 @@ module.exports = {
 	],
 	"07-13": [
 		"French Fries",
-		"BBQ"
+		"BBQ",
+		"Beans 'n' Franks"
 	],
 	"07-14": [
 		"Grand Marnier",
-		"Mac & Cheese"
+		"Mac & Cheese",
+		"Macaroni",
+		"Pick Blueberries"
 	],
 	"07-15": [
 		"Tapioca Pudding",
@@ -292,7 +395,7 @@ module.exports = {
 	],
 	"07-16": [
 		"Fresh Spinach",
-		"Corn Fritter"
+		"Corn Fritters"
 	],
 	"07-17": [
 		"Peach Ice Cream"
@@ -305,7 +408,8 @@ module.exports = {
 	],
 	"07-20": [
 		"Fortune Cookie",
-		"Lollipop"
+		"Lollipop",
+		"Ice Cream Soda"
 	],
 	"07-21": [
 		"Junk Food"
@@ -328,8 +432,8 @@ module.exports = {
 		"Coffee Milkshake"
 	],
 	"07-27": [
-		"Creme Brulee",
-		"Scotch"
+		"Scotch",
+		"Crème Brûlée"
 	],
 	"07-28": [
 		"Hamburger",
@@ -337,20 +441,25 @@ module.exports = {
 	],
 	"07-29": [
 		"Lasagna",
-		"Chicken Wing"
+		"Chicken Wing",
+		"Cheese Sacrifice Purchase"
 	],
 	"07-30": [
 		"Cheesecake"
 	],
 	"07-31": [
-		"Raspberry Cake"
+		"Raspberry Cake",
+		"Cotton Candy",
+		"Jump for Jelly Beans"
 	],
 	"08-03": [
 		"Watermelon",
-		"White Wine"
+		"White Wine",
+		"Grab Some Nuts"
 	],
 	"08-10": [
-		"S'more"
+		"Banana Split",
+		"S'mores"
 	],
 	"08-13": [
 		"Filet Mignon"
@@ -363,23 +472,27 @@ module.exports = {
 	],
 	"08-16": [
 		"Rum",
-		"World Bratwurst"
+		"Bratwurst"
 	],
 	"08-17": [
 		"Vanilla Custard"
 	],
 	"08-18": [
-		"Pinot Noir"
+		"Pinot Noir",
+		"Soft Ice Cream"
 	],
 	"08-19": [
-		"Potato"
+		"Potato",
+		"Hot & Spicy Food"
 	],
 	"08-21": [
-		"Spumoni"
+		"Spumoni",
+		"Pecan Torte"
 	],
 	"08-22": [
 		"Pecan Torte",
-		"Eat A Peach"
+		"Eat A Peach",
+		"Spumoni"
 	],
 	"08-23": [
 		"Sponge Cake"
@@ -396,8 +509,8 @@ module.exports = {
 		"Cherry Popsicle"
 	],
 	"08-27": [
-		"Pots De Creme",
-		"Banana Lovers"
+		"Pots de Creme",
+		"Banana Lover's"
 	],
 	"08-28": [
 		"Cherry Turnover",
@@ -406,13 +519,16 @@ module.exports = {
 	"08-29": [
 		"More Herbs, Less Salt",
 		"Lemon Juice",
-		"Chop Suey"
+		"Chop Suey",
+		"Whiskey Sour",
+		"Swiss Winegrowers"
 	],
 	"08-30": [
 		"Toasted Marshmallow"
 	],
 	"08-31": [
-		"Trail Mix"
+		"Trail Mix",
+		"Eat Outside"
 	],
 	"09-01": [
 		"Cherry Popover"
@@ -424,7 +540,7 @@ module.exports = {
 		"Welsh Rarebit"
 	],
 	"09-04": [
-		"Macademia Nut"
+		"Macadamia Nut"
 	],
 	"09-05": [
 		"Cheese Pizza"
@@ -438,8 +554,8 @@ module.exports = {
 		"Salami"
 	],
 	"09-09": [
-		"Wienerschnitzel",
-		"Steak Au Poivre"
+		"Steak Au Poivre",
+		"Weinerschnitzel"
 	],
 	"09-10": [
 		"TV Dinner"
@@ -452,7 +568,8 @@ module.exports = {
 	],
 	"09-13": [
 		"Peanut",
-		"International Chocolate"
+		"International Chocolate",
+		"Snack a Pickle Time"
 	],
 	"09-14": [
 		"Eat a Hoagie",
@@ -461,8 +578,8 @@ module.exports = {
 	"09-15": [
 		"Crème de Menthe",
 		"Double Cheeseburger",
-		"Linguine",
-		"Cheese Toast"
+		"Cheese Toast",
+		"Linguini"
 	],
 	"09-16": [
 		"Guacamole",
@@ -480,20 +597,21 @@ module.exports = {
 	],
 	"09-20": [
 		"Pepperoni Pizza",
-		"Punch",
 		"Rum Punch"
 	],
 	"09-21": [
-		"Pecan Cookie"
+		"Pecan Cookie",
+		"International Banana Festival"
 	],
 	"09-25": [
-		"Lobster"
+		"Lobster",
+		"Crab Meat Newburg",
+		"Food Service Employees"
 	],
 	"09-26": [
 		"Better Breakfast",
 		"Pancake",
-		"Dumpling  National Chocolate Milk Day",
-		"Johnny Appleseed"
+		"Dumpling  National Chocolate Milk Day"
 	],
 	"09-27": [
 		"Chocolate Milk",
@@ -513,13 +631,15 @@ module.exports = {
 	],
 	"10-04": [
 		"Vodka",
-		"Taco"
+		"Taco",
+		"Cinnamon Roll  [Sweden]"
 	],
 	"10-06": [
 		"Noodle"
 	],
 	"10-11": [
-		"Sausage Pizza"
+		"Sausage Pizza",
+		"World Egg"
 	],
 	"10-14": [
 		"Dessert"
@@ -531,33 +651,35 @@ module.exports = {
 		"Brandied Fruit"
 	],
 	"10-23": [
-		"Boston Creme Pie"
+		"Boston Cream Pie",
+		"Canning"
 	],
 	"10-24": [
-		"Bologna",
-		"Food"
+		"Bologna"
 	],
 	"10-25": [
-		"Greasy Food"
+		"Greasy Foods"
 	],
 	"10-28": [
-		"Chocolate day"
+		"Chocolate",
+		"Wild Foods"
 	],
 	"10-29": [
 		"Oatmeal"
 	],
 	"10-30": [
 		"Haunted Refrigerator Night",
-		"Candy Corn"
+		"Candy Corn",
+		"Buy a Doughnut"
 	],
 	"10-31": [
 		"Candy Apple",
-		"Caramel Apple"
+		"Trick or Treat for UNICEF"
 	],
 	"11-01": [
 		"Vinegar",
-		"French Fried Clam",
-		"Cook For Your Pets"
+		"Cook For Your Pets",
+		"Deep Fried Clams"
 	],
 	"11-02": [
 		"Deviled Egg"
@@ -582,10 +704,12 @@ module.exports = {
 		"Harvey Wallbanger",
 		"Cook Something Bold and Pungent",
 		"Cappuccino",
-		"Shot"
+		"Shot",
+		"Cook Something Bold"
 	],
 	"11-09": [
-		"Scrapple"
+		"Scrapple",
+		"Cook Something Bold & Pungent"
 	],
 	"11-10": [
 		"Vanilla Cupcake"
@@ -594,20 +718,22 @@ module.exports = {
 		"Sundae"
 	],
 	"11-12": [
-		"Pizza with the Works Except Anchovies",
 		"Chicken Soup for the Soul",
-		"Happy Hour"
+		"Happy Hour",
+		"Pizza With Everything (Except Anchovies)"
 	],
 	"11-13": [
 		"Indian Pudding"
 	],
 	"11-14": [
 		"Pickle",
-		"Spicy Guacamole"
+		"Guacamole"
 	],
 	"11-15": [
 		"Spicy Hermit Cookie",
-		"Clean Out Your Refrigerator"
+		"Clean Out Your Refrigerator",
+		"Raisin Bran Cereal",
+		"Bundt"
 	],
 	"11-16": [
 		"Fast Food"
@@ -624,20 +750,25 @@ module.exports = {
 		"Carbonated Beverage with Caffeine"
 	],
 	"11-20": [
-		"Peanut Butter Fudge"
+		"Peanut Butter Fudge",
+		"Noveau Beaujolais"
 	],
 	"11-21": [
-		"Stuffing"
+		"Stuffing",
+		"Gingerbread"
 	],
 	"11-22": [
-		"Cranberry Relish"
+		"Cranberry Relish",
+		"Cashew"
 	],
 	"11-23": [
 		"Cashew",
-		"Eat A Cranberry"
+		"Espresso",
+		"Eat a Cranberry"
 	],
 	"11-24": [
-		"Espresso"
+		"Espresso",
+		"Sardines"
 	],
 	"11-25": [
 		"Parfait"
@@ -653,8 +784,8 @@ module.exports = {
 	],
 	"11-29": [
 		"Throw Out Your Leftovers",
-		"Lemon Cream Pie",
-		"Chocolates"
+		"Chocolates",
+		"Lemon Creme Pie"
 	],
 	"11-30": [
 		"Mousse"
@@ -670,10 +801,11 @@ module.exports = {
 		"Cookie"
 	],
 	"12-05": [
-		"Rock Candy"
+		"Rock Candy",
+		"Sacher Torte"
 	],
 	"12-08": [
-		"Brownie"
+		"Chocolate Brownie"
 	],
 	"12-10": [
 		"Lager"
@@ -695,22 +827,24 @@ module.exports = {
 		"Maple Syrup"
 	],
 	"12-20": [
-		"Sangria"
+		"Sangria",
+		"Fried Shrimp"
 	],
 	"12-21": [
-		"Hamburger"
+		"Hamburger",
+		"Kiwi Fruit  (California)"
 	],
 	"12-22": [
 		"Date Nut Bread"
 	],
 	"12-24": [
-		"Eggnog"
+		"Egg Nog"
 	],
 	"12-25": [
 		"Pumpkin Pie"
 	],
 	"12-27": [
-		"Fruitcake"
+		"Fruit Cake"
 	],
 	"12-30": [
 		"Bicarbonate of Soda"
