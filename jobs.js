@@ -60,7 +60,9 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
     }
     var to = _.find(store.channels, { name: toChannel });
     if (!mute) {
+        console.log('sending message...');
         rtm.sendMessage(message, to.id, function() {
+            console.log('message sent');
             rtm.disconnect();
         })
     }
