@@ -53,14 +53,15 @@ rtm.on(RTM_CLIENT_EVENTS.AUTHENTICATED, function (payload) {
 
 
 rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
-    var foodsOfDay = findFoodDay();
+    var foodsOfDay = findFoodDay(),
+        message = 'Today is not a National Food Day.';
     if (foodsOfDay  !== undefined) {
         var message = createMessage(foodsOfDay);
-        var to = _.find(store.channels, { name: toChannel });
-        if (!mute) {
-            rtm.sendMessage(message, to.id, function() {
-                rtm.disconnect();
-            })
-        }
+    }
+    var to = _.find(store.channels, { name: toChannel });
+    if (!mute) {
+        rtm.sendMessage(message, to.id, function() {
+            rtm.disconnect();
+        })
     }
 });
