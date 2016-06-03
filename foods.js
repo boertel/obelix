@@ -271,7 +271,8 @@ module.exports = {
 	],
 	"06-03": [
 		"Chocolate Macaroon",
-		"Egg"
+		"Egg",
+        "Donut"
 	],
 	"06-04": [
 		"Cheese",
@@ -280,7 +281,6 @@ module.exports = {
 		"Frozen Yogurt"
 	],
 	"06-05": [
-		"Donut/Doughnut",
 		"Gingerbread",
 		"Moonshine"
 	],
