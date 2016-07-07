@@ -360,6 +360,7 @@ module.exports = {
 	],
 	"07-07": [
 		"Macaroni",
+        "World Chocolate",
 		"Strawberry Sundae"
 	],
 	"07-08": [
