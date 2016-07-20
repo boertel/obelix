@@ -15,6 +15,7 @@ export SLACK_TOKEN="<your slack bot token>"
 ```
 Optional:
 ```
+# default to #random
 export SLACK_TO_CHANNEL="<channel where obelix will post>"
 export BOT_MUTE="false"
 ```
