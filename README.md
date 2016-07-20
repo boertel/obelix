@@ -3,12 +3,12 @@
 Origin of the name: https://en.wikipedia.org/wiki/Obelix
 
 ## Install
-## Add bot to slack and get a token
+### Add bot to slack and get a token
 1. Go to: http://your-team.slack.com/apps/manage/custom-integrations
 2. Bots
 3. Add Configuration
 
-## Environment variables
+### Environment variables
 Required:
 ```
 export SLACK_TOKEN="<your slack bot token>"
@@ -19,7 +19,7 @@ export SLACK_TO_CHANNEL="<channel where obelix will post>"
 export BOT_MUTE="false"
 ```
 
-## Dependencies
+### Dependencies
 ```
 $ npm install
 ```
