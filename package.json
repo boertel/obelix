@@ -9,7 +9,7 @@
   "author": "Ben Oertel",
   "license": "ISC",
   "dependencies": {
-    "@slack/client": "^2.1.0",
+    "@slack/client": "^3.6.0",
     "lodash": "^4.6.1"
   }
 }

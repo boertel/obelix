@@ -33,21 +33,27 @@ function getVendors(callback) {
 
             var key = [year, month, day].join('-');
 
-            if (date === key) {
+            //if (date === key) {
                 vendors = events[0].Vendors;
-            }
+            //}
             callback && callback(vendors);
         }
     });
+}
+
+function generateYelpSearch(name) {
+    var name = encodeURIComponent(name);
+    return 'https://www.yelp.com/search?find_desc=' + name;
 }
 
 function getMessage(callback) {
     getVendors(function(vendors) {
         var message;
         if (vendors.length) {
-            var output = ['Today food trucks are:'];
+            var output = ['Today\'s food trucks are:'];
             vendors.forEach(function(vendor) {
-                output.push('- _' + vendor.name + '_ (' + vendor.cuisine + ') - ' + vendor.website);
+                var website = vendor.website || generateYelpSearch(vendor.name);
+                output.push('- _' + vendor.name + '_ (' + vendor.cuisine + ') ' + website);
             });
             message = output.join('\n');
         }

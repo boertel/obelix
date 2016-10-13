@@ -1,6 +1,7 @@
 var RtmClient = require('@slack/client').RtmClient,
     RTM_EVENTS = require('@slack/client').RTM_EVENTS,
     RTM_CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS.RTM,
+    MemoryDataStore = require('@slack/client').MemoryDataStore,
     _ = require('lodash');
 
 var day = require('./day'),
@@ -10,21 +11,12 @@ var day = require('./day'),
 var toChannel = process.env.SLACK_TO_CHANNEL || 'random',
     mute = process.env.BOT_MUTE === 'true' || false;
 
-var rtm = new RtmClient(process.env.SLACK_TOKEN, { logLevel: '' });
-//rtm.start();
-
-var store = {
-    channels: {},
-    users: {}
-};
-
-
-rtm.on(RTM_CLIENT_EVENTS.AUTHENTICATED, function (payload) {
-    store = {
-        channels: payload.channels,
-        users: payload.users
-    }
+var rtm = new RtmClient(process.env.SLACK_TOKEN, {
+    logLevel: '',
+    dataStore: new MemoryDataStore,
 });
+
+rtm.start();
 
 
 function getMessages() {
@@ -41,15 +33,29 @@ function getMessages() {
 }
 
 
+function getChannelId(ds, name) {
+    var channel = ds.getChannelByName(name);
+    if (!channel) {
+        channel = ds.getDMByName(name);
+    }
+    return channel;
+}
+
+
 rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
     getMessages().then(function(messages) {
         if (messages.length && !mute) {
             console.log('sending message...');
-            var to = _.find(store.channels, { name: toChannel });
+            var channel = getChannelId(rtm.dataStore, toChannel);
             var sent = 0;
             messages.map(function(message) {
-                rtm.sendMessage(message, to.id, function() {
-                    console.log('message sent');
+                var args = {
+                    text: message,
+                    channel: channel.id,
+                    type: RTM_EVENTS.MESSAGE,
+                };
+                rtm.send(args, function(err) {
+                    console.log('message sent', err);
                     sent += 1;
                     if (sent === message.length) {
                         rtm.disconnect();
