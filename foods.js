@@ -453,6 +453,9 @@ module.exports = {
 		"Cotton Candy",
 		"Jump for Jelly Beans"
 	],
+	"08-02": [
+		"Ice Cream Sandwich"
+	],
 	"08-03": [
 		"Watermelon",
 		"White Wine",
