@@ -59,5 +59,5 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
         } else {
             console.log('no message to sent');
         }
-    }
+    });
 });
