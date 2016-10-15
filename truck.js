@@ -33,9 +33,9 @@ function getVendors(callback) {
 
             var key = [year, month, day].join('-');
 
-            //if (date === key) {
+            if (date === key) {
                 vendors = events[0].Vendors;
-            //}
+            }
             callback && callback(vendors);
         }
     });
