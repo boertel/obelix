@@ -23,7 +23,7 @@ function getMessages() {
     return new Promise(function(resolve) {
        var dayMessage = day.getMessage();
 
-        truck.getMessage(function(truckMessage) {
+        truck.getMessage().then(function(truckMessage) {
             var messages = [];
             dayMessage && messages.push(dayMessage);
             truckMessage && messages.push(truckMessage);

@@ -1,5 +1,5 @@
 var trucks = require('./truck')
 
-trucks.getMessage(function(m) {
+trucks.getMessage().then(function(m) {
     console.log(m);
 });
