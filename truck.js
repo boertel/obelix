@@ -51,12 +51,13 @@ function today() {
 }
 
 function getEvents() {
-    var from_ = (new Date().getTime()),
+    var from_ = (new Date(today()).getTime()),
         to_ = from_ + (1000 * 60 * 60 * 24 * 7),
         locationId = process.env.LOCATION_ID;
     return get(INFRASTRUCKTURE_URL + '?dateFrom=' + from_ + '&locationId=' + locationId + '&dateTo=' + to_).then(function(response) {
         var events = response.data.events;
         var firstEvent = events[0];
+        console.log(events, today());
 
         if (firstEvent.startTime.indexOf(today()) !== -1) {
             return firstEvent;
@@ -91,7 +92,7 @@ function getMessage() {
             return message;
         })
         .catch(function(error) {
-            console.log(error.message);
+            console.log('error', error.message);
         });
 
 }
