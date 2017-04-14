@@ -57,7 +57,6 @@ function getEvents() {
     return get(INFRASTRUCKTURE_URL + '?dateFrom=' + from_ + '&locationId=' + locationId + '&dateTo=' + to_).then(function(response) {
         var events = response.data.events;
         var firstEvent = events[0];
-        console.log(events, today());
 
         if (firstEvent.startTime.indexOf(today()) !== -1) {
             return firstEvent;

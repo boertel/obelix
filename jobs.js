@@ -59,6 +59,7 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
                     sent += 1;
                     if (sent === message.length) {
                         rtm.disconnect();
+                        process.exit();
                     }
                 });
             });
