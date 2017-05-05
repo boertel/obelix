@@ -18,7 +18,7 @@ function get(url, callback) {
         protocol: parseURL.protocol,
         method: 'GET',
         headers: {
-            'Authorization': 'Bearer ' + process.env.INFRASTRUCKTURE_TOKEN,
+            'authorization': 'Bearer ' + process.env.INFRASTRUCKTURE_TOKEN,
         },
     };
 
@@ -55,13 +55,17 @@ function getEvents() {
         to_ = from_ + (1000 * 60 * 60 * 24 * 7),
         locationId = process.env.LOCATION_ID;
     return get(INFRASTRUCKTURE_URL + '?dateFrom=' + from_ + '&locationId=' + locationId + '&dateTo=' + to_).then(function(response) {
-        var events = response.data.events;
-        var firstEvent = events[0];
-
-        if (firstEvent.startTime.indexOf(today()) !== -1) {
-            return firstEvent;
+        if (response.data.error) {
+            throw new Error(response.data.message)
         } else {
-            throw new Error('no events found.')
+            var events = response.data.events;
+            var firstEvent = events[0];
+
+            if (firstEvent.startTime.indexOf(today()) !== -1) {
+                return firstEvent;
+            } else {
+                throw new Error('no events found.')
+            }
         }
     });
 }
