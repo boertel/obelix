@@ -54,12 +54,13 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
             var sent = 0;
             messages.map(function(message) {
                 var opts = {
+                    as_user: true,
                     unfurl_links: false,
                 }
                 web.chat.postMessage(channel.id, message, opts, function(err) {
                     console.log('message sent', err);
                     sent += 1;
-                    if (sent === message.length) {
+                    if (sent === messages.length) {
                         rtm.disconnect();
                         process.exit();
                     }
