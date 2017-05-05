@@ -51,6 +51,7 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
             messages.map(function(message) {
                 var args = {
                     text: message,
+                    unfurl_links: false,
                     channel: channel.id,
                     type: RTM_EVENTS.MESSAGE,
                 };

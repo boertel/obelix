@@ -80,6 +80,10 @@ function getVendors(evt) {
     });
 }
 
+function getOTGLink(vendor) {
+    return 'https://offthegrid.com/vendor/' + vendor.name.toLowerCase().replace(/ /g, '-').replace(/'/g, '');
+}
+
 function getMessage() {
     return getEvents()
         .then(getVendors)
@@ -88,7 +92,7 @@ function getMessage() {
             if (vendors.length) {
                 var output = ['Today\'s food trucks are:'];
                 vendors.forEach(function(vendor) {
-                    output.push('- _' + vendor.name + '_');
+                    output.push('- <' + getOTGLink(vendor) + '|' + vendor.name + '>');
                 });
                 message = output.join('\n');
             }
