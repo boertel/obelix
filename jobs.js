@@ -2,6 +2,7 @@ var RtmClient = require('@slack/client').RtmClient,
     RTM_EVENTS = require('@slack/client').RTM_EVENTS,
     RTM_CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS.RTM,
     MemoryDataStore = require('@slack/client').MemoryDataStore,
+    WebClient = require('@slack/client').WebClient,
     _ = require('lodash');
 
 var day = require('./day'),
@@ -15,6 +16,8 @@ var rtm = new RtmClient(process.env.SLACK_TOKEN, {
     logLevel: '',
     dataStore: new MemoryDataStore,
 });
+
+var web = new WebClient(process.env.SLACK_TOKEN);
 
 rtm.start();
 
@@ -52,10 +55,8 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
                 var args = {
                     text: message,
                     unfurl_links: false,
-                    channel: channel.id,
-                    type: RTM_EVENTS.MESSAGE,
                 };
-                rtm.send(args, function(err) {
+                web.chat.postMessage(channel.id, args, function(err) {
                     console.log('message sent', err);
                     sent += 1;
                     if (sent === message.length) {
