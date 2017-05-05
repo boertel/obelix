@@ -50,13 +50,13 @@ rtm.on(RTM_CLIENT_EVENTS.RTM_CONNECTION_OPENED, function () {
         if (messages.length && !mute) {
             console.log('sending message...');
             var channel = getChannelId(rtm.dataStore, toChannel);
+            //var channel = {id: 'U050CH7TL'}
             var sent = 0;
             messages.map(function(message) {
-                var args = {
-                    text: message,
+                var opts = {
                     unfurl_links: false,
-                };
-                web.chat.postMessage(channel.id, args, function(err) {
+                }
+                web.chat.postMessage(channel.id, message, opts, function(err) {
                     console.log('message sent', err);
                     sent += 1;
                     if (sent === message.length) {
