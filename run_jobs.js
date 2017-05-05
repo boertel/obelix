@@ -26,6 +26,7 @@ rtm.start();
 
 var jobs = {
     'food': require('./jobs/food'),
+    'truck': require('./jobs/truck'),
     'weather': require('./jobs/weather'),
 }
 
@@ -54,6 +55,9 @@ function sendMessage(channel) {
 }
 
 function sendMessages(messages) {
+    if (!Array.isArray(messages)) {
+        messages = [messages]
+    }
     var channel = getChannelId(rtm.dataStore, toChannel);
     console.log('sending ' + messages.length + ' messages');
     return new Promise(function(resolve, reject) {
