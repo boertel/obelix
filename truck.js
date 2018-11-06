@@ -3,10 +3,31 @@ var URL = require('url').URL;
 
 
 var INFRASTRUCKTURE_URL = 'https://www.infrastruckture.com/public-api/events';
+var regex = /var OTG_API_JWT = "(.*)";/gm;
 
 function generateYelpSearch(name) {
     var name = encodeURIComponent(name);
     return 'https://www.yelp.com/search?find_desc=' + name;
+}
+
+function getToken(callback) {
+    https.get('https://offthegrid.com/', function(response) {
+        var body = '';
+        response.on('data', function(d) {
+            body += d;
+        });
+
+        response.on('end', function() {
+            while ((m = regex.exec(body)) !== null) {
+                // This is necessary to avoid infinite loops with zero-width matches
+                if (m.index === regex.lastIndex) {
+                    regex.lastIndex++;
+                }
+                // The result can be accessed through the `m`-variable.
+                callback(m[1]);
+            }
+        });
+    });
 }
 
 function get(url, callback) {
@@ -18,11 +39,12 @@ function get(url, callback) {
         protocol: parseURL.protocol,
         method: 'GET',
         headers: {
-            'authorization': 'Bearer ' + process.env.INFRASTRUCKTURE_TOKEN,
         },
     };
 
     var promise = new Promise(function (resolve, reject) {
+        getToken(function (token) {
+            options.headers['authorization'] = token;
             https.get(options, function(response) {
                 var body = '';
                 response.on('data', function(d) {
@@ -34,6 +56,7 @@ function get(url, callback) {
                     resolve(parsed);
                 });
             });
+        });
     });
 
     return promise;
