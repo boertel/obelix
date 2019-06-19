@@ -312,6 +312,8 @@ module.exports = {
 		"Fresh Veggies",
 		"Apple Streudel"
 	],
+	"06-19": ["Martini"
+		],
 	"06-20": [
 		"Vanilla Milkshake",
 		"Ice Cream Soda",
